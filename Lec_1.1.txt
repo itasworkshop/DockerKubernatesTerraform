@@ -1,0 +1,34 @@
+Docker
+Linux --> in windows its available using WSL
+docker for desktop
+
+h/w --> vm --> containers --> different container supports different applications
+
+docker --> company --> docker software
+
+container --> set of processes required for running our application
+
+docker software - create, manage and orchestrate containers.
+
+docker architecture
+1. runtime --> responsible for starting and stopping container
+2. daemons --> background process --> responsible for task level API,manage images, network
+3. Orchestrator --> automated configuration and management of services, systems and application
+manager - Swarm
+
+docker runtime docker --> 	1. Swarm
+				2. Kubernates
+
+
+
+
+
+
+
+
+
+
+
+
+
+

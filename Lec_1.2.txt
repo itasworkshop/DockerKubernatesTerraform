@@ -1,0 +1,48 @@
+Docker
+
+1. what is image?
+ans: create containers --> for run application --> whatever else our application needs for execution -->
+package all these together --> IMAGE
+
+Image --> unit of packaing everything our application needs for execution
+
+
+2. Container vs Image
+ans: setting and configuration build time --> image
+actual executing --> container
+
+image are small --> container is using host Os/kernel(shared mode)
+
+Image tag -->
+<repository>:<tag>
+if we don't give tag, its default
+
+docker image pull -a mysql
+docker pull mcr.microsoft.com/mssql/server
+
+docker image rm mysql:lates
+
+conatiner
+image in execution
+
+
+
+1. ubuntu bash
+if you are running directly without local image pull still it downloads and run
+docker container run -i -t ubuntu /bin/bash
+
+2. inspect for detail
+docker container inspect container_id
+
+3. in bash
+Note :E: Unable to locate package curl first time
+apt-get update
+apt-get install curl
+
+now everything as it is normal ubuntu machine -but get your packages
+
+
+
+
+
+
