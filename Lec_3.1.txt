@@ -1,0 +1,17 @@
+Docker Compose
+-docker compose is a tool
+-running and creating multi container application
+-deploying and managing multi container app in single engine mode
+-using docker-compose.yml
+
+
+Setup
+1. verify 
+docker-compose --version
+with docker desktop it is available otherwise install it
+
+2. docker-compose up
+3. docker image ls
+4. docker container ls
+5. hit url on broser http://127.0.0.1:5000/
+
