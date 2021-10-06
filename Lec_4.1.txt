@@ -1,0 +1,54 @@
+Docker Compose
+-docker compose is a tool
+-running and creating multi container application
+-deploying and managing multi container app in single engine mode
+-using docker-compose.yml
+
+
+Setup
+1. verify 
+docker-compose --version
+with docker desktop it is available otherwise install it
+
+2. docker-compose up
+3. docker image ls
+4. docker container ls
+5. hit url on broser http://127.0.0.1:5000/
+
+
+docker attach vs exec
+1. docker attach is meant for attaching existing process/running process to container
+single instance
+2. docker exec gives a new process itself for running container
+new process --> multiple instances
+
+example- run ubuntu container
+if we attach /bin/bash, we get only single instance of bash, open two cmds and it will act as single instance --> changes in one cmd will copy in another one.
+if we exec /bin/bash we can have multiple instances of bash
+
+docker-compose down vs stop
+1. down deletes all resources after stopping container
+C:\Development\DockerKubernatesTerraform\counter-app>docker-compose down
+Stopping counter-app_web-fe_1 ... done
+Stopping counter-app_redis_1  ... done
+Removing counter-app_web-fe_1 ... done
+Removing counter-app_redis_1  ... done
+Removing network counter-app_counter-net
+
+2. stop just to stop container without deleting resources
+C:\Development\DockerKubernatesTerraform\counter-app>docker-compose stop
+Stopping counter-app_web-fe_1 ... done
+Stopping counter-app_redis_1  ... done
+
+-Docker Volume
+once containers are running we can check data generated and used by container using volume
+
+docker volume inspect counter-app_counter-vol
+
+docker volume inspect counter-app_counter-vol | grep Mount 
+
+
+
+
+
+
